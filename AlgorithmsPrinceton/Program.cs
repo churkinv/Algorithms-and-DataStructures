@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace AlgorithmsPrinceton
 {
@@ -10,101 +12,32 @@ namespace AlgorithmsPrinceton
     {
         static void Main(string[] args)
         {
-            int N = int.Parse(Console.ReadLine());
-            UF uf = new UF(N);
+            Random random = new Random();
+            Stopwatch stopwatch = new Stopwatch();
+            int size = 1000;
+            int[] array = new int[size];
 
-            while (!String.IsNullOrEmpty(Console.ReadLine()))
+         
+            for (int i = 0; i < size; i++) // fillin
             {
-                int p = int.Parse(Console.ReadLine());
-                int q = int.Parse(Console.ReadLine());
-                if (!uf.connected(p, q))
-                {
-                    uf.union(p, q);
-                    Console.WriteLine(p + " " + q);
-                }
+                array[i] = random.Next(-1000000000,1000000000);
             }
-        }
-    }
 
-    #region
-    #endregion
-
-    public class UF
-    {
-        private int[] id;
-        public UF(int n) //UF(int N) initialize union-find data structure with N objects(0 to N – 1)
-        {
-            id = new int[n];
-            for (int i = 0; i < n; i++)
-            {
-                id[i] = i;
-            }
-        }
-
-        private int root(int i) // quick union
-        {
-
-            #region quick union
-            //while (i != id[i]) i = id[i];
-            //return i;
-            #endregion
-
-            #region weighted quick union
-            while (i != id[i])
-            {
-                id[i] = id[id[i]];
-                i = id[i];
-            }
-            return i;
-            #endregion
-
-        }
-
-        public void union(int p, int q) //add connection between p and q
-        {
-            #region quick find
-            //int pid = id[p]; 
-            //int qid = id[q]; 
-
-            //for (int i = 0; i < id.Length; i++) 
+            //foreach (var item in array)
             //{
-            //    if (id[i] == pid) id[i] = qid; 
+            //    WriteLine(item);
             //}
-            #endregion
-            
-            #region quick union
-            int i = root(p);
-            int j = root(q);
-            id[i] = j;
-            #endregion
 
-        }
+            stopwatch.Start(); // start time evaluation
+            int counts = ThreeSum.Count(array);
+            stopwatch.Stop(); // end time eveluation
 
-        public bool connected(int p, int q) //are p and q in the same component?
-        {
-            //return id[p] == id[q];  // quick find
-            return root(p) == root(q);  // quick union
-        }
+            TimeSpan time = stopwatch.Elapsed;
 
-        public int find(int p) // component identifier for p(0 to N – 1)
-        {
+            WriteLine($"Time of calculation: {time} " +
+                $"\nNumber of counts:{counts}");
 
-            #region quick find 
-            int? q = null; 
-            for (int i = 0; i < id.Length; i++) 
-            {
-                if (id[i] == p) q = i;
-            }
-            return  (int)q; 
-            #endregion         
-
-        }
-
-        public int count() // number of components
-        {
-            return 0;
+            ReadLine();
         }
     }
-
-
 }
