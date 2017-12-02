@@ -1,35 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AlgorithmsPrinceton
 {
     public class Percolation
     {
-        int[,] grid;
-        bool elementState;
-        int site;
-        Random random; 
+        int side = 4;
+        Dictionary<Dictionary<int, bool>, bool> element;
+        bool [,] grid;
+        int count;   
+        Random random;       
 
         public Percolation(int n) // create n-by-n grid, with all sites blocked
-        {
-            
+        {            
             if (n <= 0) throw new ArgumentException("The value should be more than 0");
-            grid = new int[n, n];
-            random = new Random();
+            grid = new bool[n, n];
+            element = new Dictionary<int, bool> { };
             for (int i = 0; i < grid.Length; i++)
             {
                 for (int j = 0; j < grid.Length; j++)
                 {
-                    grid[i, j] = random.Next();
+                    //site.Add(grid[i, j], false);
                 }       
             }
         }
         public void open(int row, int col) // open site (row, col) if it is not open already
         {
-            
+            grid[row, col] = true;
         }
         public bool isOpen(int row, int col) // is site (row, col) open?
         {
-            return true;
+            if(grid[row,col] == true) return true;
+
+            return false;
         }
         public bool isFull(int row, int col) // is site (row, col) full?
         {
