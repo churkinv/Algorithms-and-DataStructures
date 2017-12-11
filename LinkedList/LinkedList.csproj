@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5112E28-E643-436F-8C66-919CCE8832CD}</ProjectGuid>
+    <ProjectGuid>{96022ED9-10AF-4970-9963-A353B2EDC054}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AlgorithmsPrinceton</RootNamespace>
-    <AssemblyName>AlgorithmsPrinceton</AssemblyName>
+    <RootNamespace>LinkedList</RootNamespace>
+    <AssemblyName>LinkedList</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Percolation.cs" />
+    <Compile Include="LinkedList.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThreeSum.cs" />
-    <Compile Include="UnionFind.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
