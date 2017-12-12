@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
+    /// <summary>
+    /// Node chains
+    /// </summary>
     public class Node
     {
         public int Value { get; set; }
