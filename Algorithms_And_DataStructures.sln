@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{96022ED9-10AF-4970-9963-A353B2EDC054}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_and_DataStructures_Test", "Algorithms_and_DataStructures_Test\Algorithms_and_DataStructures_Test.csproj", "{5DDE7788-B2FF-467C-91C4-9D7D254315C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{B537BB6F-57C8-47C5-AA48-9ABEA5185C26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5DDE7788-B2FF-467C-91C4-9D7D254315C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DDE7788-B2FF-467C-91C4-9D7D254315C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DDE7788-B2FF-467C-91C4-9D7D254315C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B537BB6F-57C8-47C5-AA48-9ABEA5185C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B537BB6F-57C8-47C5-AA48-9ABEA5185C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B537BB6F-57C8-47C5-AA48-9ABEA5185C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B537BB6F-57C8-47C5-AA48-9ABEA5185C26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

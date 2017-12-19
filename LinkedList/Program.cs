@@ -38,6 +38,19 @@ namespace LinkedList
             // now iterate over each node and print the value
             PrintNodes(first);
             Console.ReadKey();
+
+
+            #region .NetFrmaework LinkedList is DoublyLinkedList
+            System.Collections.Generic.LinkedList<int> list = new System.Collections.Generic.LinkedList<int>();
+            list.AddLast(3);
+            list.AddLast(5);
+            list.AddLast(7);
+
+            foreach (int value in list)
+            {
+                Console.WriteLine(value);
+            }
+            #endregion
         }
 
         public static void PrintNodes(Node node)
