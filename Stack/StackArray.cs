@@ -11,7 +11,7 @@ namespace Stack
     /// A Last In First Out (LIFO) collection implemented as an array.
     /// </summary>
     /// <typeparam name="T">The type of item contained in the stack</typeparam>
-    public class Stack<T> : IEnumerable<T>
+    public class StackArray<T> : IEnumerable<T>
     {
         // The array of items contained in the stack.  Initialized to 0 length,
         // will grow as needed during Push

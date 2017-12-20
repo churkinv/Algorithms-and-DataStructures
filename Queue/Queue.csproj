@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B537BB6F-57C8-47C5-AA48-9ABEA5185C26}</ProjectGuid>
+    <ProjectGuid>{F8658A32-83C8-4FDB-A7C4-F169609BC70A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Stack</RootNamespace>
-    <AssemblyName>Stack</AssemblyName>
+    <RootNamespace>Queue</RootNamespace>
+    <AssemblyName>Queue</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,8 +44,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StackArray.cs" />
-    <Compile Include="StackLinkedList.cs" />
+    <Compile Include="QueueArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
