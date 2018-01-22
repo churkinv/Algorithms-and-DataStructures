@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{96022ED9-10AF-4970-9963-A353B2EDC054}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "HashTable\HashTable.csproj", "{28EEA619-E4A2-41BD-B943-F15FFBDB7F5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable.WordCount", "HashTable.WordCount\HashTable.WordCount.csproj", "{FEEB2709-4AEA-4AFF-937C-0F507EABC762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{894D5AF3-E171-4C92-BD2B-E38584AE3DC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{FEEB2709-4AEA-4AFF-937C-0F507EABC762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEEB2709-4AEA-4AFF-937C-0F507EABC762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEEB2709-4AEA-4AFF-937C-0F507EABC762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894D5AF3-E171-4C92-BD2B-E38584AE3DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894D5AF3-E171-4C92-BD2B-E38584AE3DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894D5AF3-E171-4C92-BD2B-E38584AE3DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894D5AF3-E171-4C92-BD2B-E38584AE3DC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
